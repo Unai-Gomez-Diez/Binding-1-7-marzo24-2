@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'multiplicar';
+  tabla: number[] = []
+  valor: number =0
+  calculate(valor: number){
+    for(let i=0;i<10;i++){
+      this.tabla[i]=(i+1)*valor
+    }
+  }
 }
